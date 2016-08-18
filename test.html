@@ -1,0 +1,86 @@
+
+
+<link id="artDialog-skin" href="skins/blue.css" rel="stylesheet" />
+
+
+<script src="jquery.js"></script>
+
+<script src="source/artDialog.js" type="text/javascript"></script>
+<script src="msg.js" type="text/javascript"></script>
+
+<script>
+
+window.onload=function(){
+document.getElementById("btn").addEventListener("click",function(){
+
+/*
+	art.dialog('artDialog: I Love You!',function(){
+		console.log('22')
+	},function(){  console.log('yes') });
+	*/
+	
+	Msg.ok()
+	
+	
+});
+
+}
+
+
+</script>
+
+<body>
+
+
+
+<table id="oktable" style="display:none">
+	<tr>
+		<td>
+			<img src="imgs/success.gif">
+		</td>
+		<td>
+			<div class="textdata" style="padding:10px;font: 12px/1.333 tahoma,arial,\5b8b\4f53,sans-serif;"></div>
+		</td>
+	</tr>
+</table>
+
+
+<table id="errortable" style="display:none">
+	<tr>
+		<td>
+			<img src="imgs/error.gif">
+		</td>
+		<td>
+			<div class="textdata" style="padding:10px;font: 12px/1.333 tahoma,arial,\5b8b\4f53,sans-serif;"></div>
+		</td>
+	</tr>
+</table>
+
+
+<table id="alerttable" style="display:none">
+	<tr>
+		<td>
+			<img src="imgs/alert.gif">
+		</td>
+		<td>
+			<div class="textdata" style="padding:10px;font: 12px/1.333 tahoma,arial,\5b8b\4f53,sans-serif;"></div>
+		</td>
+	</tr>
+</table>
+
+
+<table id="infotable" style="display:none">
+	<tr>
+		<td>
+			<img src="imgs/info.gif">
+		</td>
+		<td>
+			<div class="textdata" style="padding:10px;font: 12px/1.333 tahoma,arial,\5b8b\4f53,sans-serif;"></div>
+		</td>
+	</tr>
+</table>
+
+
+
+<input type="button" value="click" id="btn" />
+</body>
